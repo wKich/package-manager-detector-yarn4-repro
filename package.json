@@ -1,0 +1,21 @@
+{
+  "name": "pmd-repro-yarn4-useragent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal repro: package-manager-detector@1.9.0 misdetects the real Yarn 4.13 user agent as classic yarn",
+  "packageManager": "yarn@4.13.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "package-manager-detector": "1.9.0"
+  },
+  "scripts": {
+    "repro": "node repro.mjs",
+    "repro:playwright": "node repro-playwright.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}
